@@ -1,0 +1,934 @@
+{
+ "seong2017cohort": {
+  "type": "journal",
+  "authors": [
+   "Seong SC",
+   "Kim YY",
+   "Park SK",
+   "Khang YH",
+   "Kim HC",
+   "Park JH",
+   "Kang HJ",
+   "Do CH",
+   "Song JS",
+   "Lee EJ",
+   "Ha S",
+   "Shin SA",
+   "Jeong SL"
+  ],
+  "title": "Cohort profile: the National Health Insurance Service-National Health Screening Cohort (NHIS-HEALS) in Korea",
+  "journal": "BMJ Open",
+  "year": 2017,
+  "vol": "7",
+  "issue": "9",
+  "pages": "e016640",
+  "doi": "10.1136/bmjopen-2017-016640",
+  "pmid": "28947447",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "pinsky2006abnormalities": {
+  "type": "journal",
+  "authors": [
+   "Pinsky PF",
+   "Freedman M",
+   "Kvale P",
+   "Oken M",
+   "Caporaso N",
+   "Gohagan J"
+  ],
+  "title": "Abnormalities on chest radiograph reported in subjects in a cancer screening trial",
+  "journal": "Chest",
+  "year": 2006,
+  "vol": "130",
+  "issue": "3",
+  "pages": "688-93",
+  "doi": "10.1378/chest.130.3.688",
+  "pmid": "16963664",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "eisenberg2010low": {
+  "type": "journal",
+  "authors": [
+   "Eisenberg RL",
+   "Pollock NR"
+  ],
+  "title": "Low yield of chest radiography in a large tuberculosis screening program",
+  "journal": "Radiology",
+  "year": 2010,
+  "vol": "256",
+  "issue": "3",
+  "pages": "998-1004",
+  "doi": "10.1148/radiol.10100485",
+  "pmid": "20720079",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "tigges2004routine": {
+  "type": "journal",
+  "authors": [
+   "Tigges S",
+   "Roberts DL",
+   "Vydareny KH",
+   "Schulman DA"
+  ],
+  "title": "Routine chest radiography in a primary care setting",
+  "journal": "Radiology",
+  "year": 2004,
+  "vol": "233",
+  "issue": "2",
+  "pages": "575-8",
+  "doi": "10.1148/radiol.2332031796",
+  "pmid": "15516621",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "castle2024prior": {
+  "type": "journal",
+  "authors": [
+   "Castle AC",
+   "Moosa Y",
+   "Claassen H",
+   "Shenoi S",
+   "Magodoro I",
+   "Manne-Goehler J",
+   "Hanekom W",
+   "Bassett IV",
+   "Wong EB",
+   "Siedner MJ"
+  ],
+  "title": "Prior tuberculosis, radiographic lung abnormalities and prevalent diabetes in rural South Africa",
+  "journal": "BMC Infect Dis",
+  "year": 2024,
+  "vol": "24",
+  "issue": "1",
+  "pages": "690",
+  "doi": "10.1186/s12879-024-09583-8",
+  "pmid": "38992607",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "grantorser2023prevalence": {
+  "type": "journal",
+  "authors": [
+   "Grant-Orser A",
+   "Min B",
+   "Elmrayed S",
+   "Podolanczuk AJ",
+   "Johannson KA"
+  ],
+  "title": "Prevalence, Risk Factors, and Outcomes of Adult Interstitial Lung Abnormalities: A Systematic Review and Meta-Analysis",
+  "journal": "Am J Respir Crit Care Med",
+  "year": 2023,
+  "vol": "208",
+  "issue": "6",
+  "pages": "695-708",
+  "doi": "10.1164/rccm.202302-0271OC",
+  "pmid": "37534937",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "chae2023interstitial": {
+  "type": "journal",
+  "authors": [
+   "Chae KJ",
+   "Lim S",
+   "Seo JB",
+   "Hwang HJ",
+   "Choi H",
+   "Lynch D",
+   "Jin GY"
+  ],
+  "title": "Interstitial Lung Abnormalities at CT in the Korean National Lung Cancer Screening Program: Prevalence and Deep Learning-based Texture Analysis",
+  "journal": "Radiology",
+  "year": 2023,
+  "vol": "307",
+  "issue": "4",
+  "pages": "e222828",
+  "doi": "10.1148/radiol.222828",
+  "pmid": "37097142",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "jin2024interstitial": {
+  "type": "journal",
+  "authors": [
+   "Jin GY"
+  ],
+  "title": "Interstitial Lung Abnormality in Asian Population",
+  "journal": "Tuberc Respir Dis (Seoul)",
+  "year": 2024,
+  "vol": "87",
+  "issue": "2",
+  "pages": "134-144",
+  "doi": "10.4046/trd.2023.0117",
+  "pmid": "38111097",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "murgia2022occupational": {
+  "type": "journal",
+  "authors": [
+   "Murgia N",
+   "Gambelunghe A"
+  ],
+  "title": "Occupational COPD-The most under-recognized occupational lung disease?",
+  "journal": "Respirology",
+  "year": 2022,
+  "vol": "27",
+  "issue": "6",
+  "pages": "399-410",
+  "doi": "10.1111/resp.14272",
+  "pmid": "35513770",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "grahn2021occupational": {
+  "type": "journal",
+  "authors": [
+   "Grahn K",
+   "Gustavsson P",
+   "Andersson T",
+   "Lindén A",
+   "Hemmingsson T",
+   "Selander J",
+   "Wiebert P"
+  ],
+  "title": "Occupational exposure to particles and increased risk of developing chronic obstructive pulmonary disease (COPD): A population-based cohort study in Stockholm, Sweden",
+  "journal": "Environ Res",
+  "year": 2021,
+  "vol": "200",
+  "issue": "",
+  "pages": "111739",
+  "doi": "10.1016/j.envres.2021.111739",
+  "pmid": "34302831",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "torn2017occupational": {
+  "type": "journal",
+  "authors": [
+   "Torén K",
+   "Vikgren J",
+   "Olin AC",
+   "Rosengren A",
+   "Bergström G",
+   "Brandberg J"
+  ],
+  "title": "Occupational exposure to vapor, gas, dust, or fumes and chronic airflow limitation, COPD, and emphysema: the Swedish CArdioPulmonary BioImage Study (SCAPIS pilot)",
+  "journal": "Int J Chron Obstruct Pulmon Dis",
+  "year": 2017,
+  "vol": "12",
+  "issue": "",
+  "pages": "3407-3413",
+  "doi": "10.2147/COPD.S144933",
+  "pmid": "29238185",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "lam2012past": {
+  "type": "journal",
+  "authors": [
+   "Lam KB",
+   "Yin P",
+   "Jiang CQ",
+   "Zhang WS",
+   "Adab P",
+   "Miller MR",
+   "Thomas GN",
+   "Ayres JG",
+   "Lam TH",
+   "Cheng KK"
+  ],
+  "title": "Past dust and GAS/FUME exposure and COPD in Chinese: the Guangzhou Biobank Cohort Study",
+  "journal": "Respir Med",
+  "year": 2012,
+  "vol": "106",
+  "issue": "10",
+  "pages": "1421-8",
+  "doi": "10.1016/j.rmed.2012.05.009",
+  "pmid": "22795505",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "hii2022respiratory": {
+  "type": "journal",
+  "authors": [
+   "Hii M",
+   "Beyer K",
+   "Namin S",
+   "Malecki K",
+   "Rublee C"
+  ],
+  "title": "Respiratory Function and Racial Health Disparities With Residential Proximity to Coal Power Plants in Wisconsin",
+  "journal": "WMJ",
+  "year": 2022,
+  "vol": "121",
+  "issue": "2",
+  "pages": "94-105",
+  "doi": "",
+  "pmid": "35877032",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "komisarow2021effect": {
+  "type": "journal",
+  "authors": [
+   "Komisarow S",
+   "Pakhtigian EL"
+  ],
+  "title": "The Effect of Coal-Fired Power Plant Closures on Emergency Department Visits for Asthma-Related Conditions Among 0- to 4-Year-Old Children in Chicago, 2009-2017",
+  "journal": "Am J Public Health",
+  "year": 2021,
+  "vol": "111",
+  "issue": "5",
+  "pages": "881-889",
+  "doi": "10.2105/AJPH.2021.306155",
+  "pmid": "33734848",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "lee2025assessing": {
+  "type": "journal",
+  "authors": [
+   "Lee EJ",
+   "Jo N",
+   "Heo TY",
+   "Young-Youl K",
+   "Kwon E",
+   "Kang MG",
+   "Jhong JH"
+  ],
+  "title": "Assessing the impact of air pollution on lung function in South Korea using Bayesian kernel machine regression",
+  "journal": "Sci Rep",
+  "year": 2025,
+  "vol": "15",
+  "issue": "1",
+  "pages": "32138",
+  "doi": "10.1038/s41598-025-17352-z",
+  "pmid": "40890432",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "garciaaymerich2007regular": {
+  "type": "journal",
+  "authors": [
+   "Garcia-Aymerich J",
+   "Lange P",
+   "Benet M",
+   "Schnohr P",
+   "Antó JM"
+  ],
+  "title": "Regular physical activity modifies smoking-related lung function decline and reduces risk of chronic obstructive pulmonary disease: a population-based cohort study",
+  "journal": "Am J Respir Crit Care Med",
+  "year": 2007,
+  "vol": "175",
+  "issue": "5",
+  "pages": "458-63",
+  "doi": "10.1164/rccm.200607-896OC",
+  "pmid": "17158282",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "thatipelli2022neighborhood": {
+  "type": "journal",
+  "authors": [
+   "Thatipelli S",
+   "Kershaw KN",
+   "Colangelo LA",
+   "Gordon-Larsen P",
+   "Jacobs DR",
+   "Dransfield MT",
+   "Meza D",
+   "Rosenberg SR",
+   "Washko GR",
+   "Parekh TM",
+   "Carnethon MR",
+   "Kalhan R"
+  ],
+  "title": "Neighborhood Socioeconomic Deprivation in Young Adulthood and Future Respiratory Health: The CARDIA Lung Study",
+  "journal": "Am J Med",
+  "year": 2022,
+  "vol": "135",
+  "issue": "2",
+  "pages": "211-218.e1",
+  "doi": "10.1016/j.amjmed.2021.07.048",
+  "pmid": "34509450",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "hwang2014association": {
+  "type": "journal",
+  "authors": [
+   "Hwang YI",
+   "Kim JH",
+   "Lee CY",
+   "Park S",
+   "Park YB",
+   "Jang SH",
+   "Kim CH",
+   "Shin TR",
+   "Park SM",
+   "Sim YS",
+   "Kim DG",
+   "Lee MG",
+   "Hyun IG",
+   "Jung KS"
+  ],
+  "title": "The association between airflow obstruction and radiologic change by tuberculosis",
+  "journal": "J Thorac Dis",
+  "year": 2014,
+  "vol": "6",
+  "issue": "5",
+  "pages": "471-6",
+  "doi": "10.3978/j.issn.2072-1439.2014.04.02",
+  "pmid": "24822105",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "choi2017definition": {
+  "type": "journal",
+  "authors": [
+   "Choi CJ",
+   "Choi WS",
+   "Lee SY",
+   "Kim KS"
+  ],
+  "title": "The Definition of Past Tuberculosis Affects the Magnitude of Association between Pulmonary Tuberculosis and Respiratory Dysfunction: Korea National Health and Nutrition Examination Survey, 2008-2012",
+  "journal": "J Korean Med Sci",
+  "year": 2017,
+  "vol": "32",
+  "issue": "5",
+  "pages": "789-795",
+  "doi": "10.3346/jkms.2017.32.5.789",
+  "pmid": "28378552",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "park2023airflow": {
+  "type": "journal",
+  "authors": [
+   "Park HJ",
+   "Byun MK",
+   "Lee J",
+   "Kim CY",
+   "Shin S",
+   "Kim Y",
+   "Rhee CK",
+   "Jung KS",
+   "Yoo KH"
+  ],
+  "title": "Airflow obstruction and chronic obstructive pulmonary disease are common in pulmonary tuberculosis even without sequelae findings on chest X-ray",
+  "journal": "Infect Dis (Lond)",
+  "year": 2023,
+  "vol": "55",
+  "issue": "8",
+  "pages": "533-542",
+  "doi": "10.1080/23744235.2023.2217904",
+  "pmid": "37243367",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "li2008lung": {
+  "type": "journal",
+  "authors": [
+   "Li F",
+   "Engelmann R",
+   "Metz CE",
+   "Doi K",
+   "MacMahon H"
+  ],
+  "title": "Lung cancers missed on chest radiographs: results obtained with a commercial computer-aided detection program",
+  "journal": "Radiology",
+  "year": 2008,
+  "vol": "246",
+  "issue": "1",
+  "pages": "273-80",
+  "doi": "10.1148/radiol.2461061848",
+  "pmid": "18096539",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "kim2021performance": {
+  "type": "journal",
+  "authors": [
+   "Kim EY",
+   "Kim YJ",
+   "Choi WJ",
+   "Lee GP",
+   "Choi YR",
+   "Jin KN",
+   "Cho YJ"
+  ],
+  "title": "Performance of a deep-learning algorithm for referable thoracic abnormalities on chest radiographs: A multicenter study of a health screening cohort",
+  "journal": "PLoS One",
+  "year": 2021,
+  "vol": "16",
+  "issue": "2",
+  "pages": "e0246472",
+  "doi": "10.1371/journal.pone.0246472",
+  "pmid": "33606779",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "knorrheld2000bayesian": {
+  "type": "journal",
+  "authors": [
+   "Knorr-Held L"
+  ],
+  "title": "Bayesian modelling of inseparable space-time variation in disease risk",
+  "journal": "Stat Med",
+  "year": 2000,
+  "vol": "19",
+  "issue": "17-18",
+  "pages": "2555-67",
+  "doi": "10.1002/1097-0258(20000915/30)19:17/18<2555::aid-sim587>3.0.co;2-#",
+  "pmid": "10960871",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "greenland1989ecological": {
+  "type": "journal",
+  "authors": [
+   "Greenland S",
+   "Morgenstern H"
+  ],
+  "title": "Ecological bias, confounding, and effect modification",
+  "journal": "Int J Epidemiol",
+  "year": 1989,
+  "vol": "18",
+  "issue": "1",
+  "pages": "269-74",
+  "doi": "10.1093/ije/18.1.269",
+  "pmid": "2656561",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "greenland2001ecologic": {
+  "type": "journal",
+  "authors": [
+   "Greenland S"
+  ],
+  "title": "Ecologic versus individual-level sources of bias in ecologic estimates of contextual health effects",
+  "journal": "Int J Epidemiol",
+  "year": 2001,
+  "vol": "30",
+  "issue": "6",
+  "pages": "1343-50",
+  "doi": "10.1093/ije/30.6.1343",
+  "pmid": "11821344",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "steegen2016increasing": {
+  "type": "journal",
+  "authors": [
+   "Steegen S",
+   "Tuerlinckx F",
+   "Gelman A",
+   "Vanpaemel W"
+  ],
+  "title": "Increasing Transparency Through a Multiverse Analysis",
+  "journal": "Perspect Psychol Sci",
+  "year": 2016,
+  "vol": "11",
+  "issue": "5",
+  "pages": "702-712",
+  "doi": "10.1177/1745691616658637",
+  "pmid": "27694465",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "froom1999healthy": {
+  "type": "journal",
+  "authors": [
+   "Froom P",
+   "Melamed S",
+   "Kristal-Boneh E",
+   "Benbassat J",
+   "Ribak J"
+  ],
+  "title": "Healthy volunteer effect in industrial workers",
+  "journal": "J Clin Epidemiol",
+  "year": 1999,
+  "vol": "52",
+  "issue": "8",
+  "pages": "731-5",
+  "doi": "10.1016/s0895-4356(99)00070-0",
+  "pmid": "10465317",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "lee2011development": {
+  "type": "journal",
+  "authors": [
+   "Lee WJ",
+   "Choi BS",
+   "Kim SJ",
+   "Park CK",
+   "Park JS",
+   "Tae S",
+   "Hering KG"
+  ],
+  "title": "Development of standard digital images for pneumoconiosis",
+  "journal": "J Korean Med Sci",
+  "year": 2011,
+  "vol": "26",
+  "issue": "11",
+  "pages": "1403-8",
+  "doi": "10.3346/jkms.2011.26.11.1403",
+  "pmid": "22065894",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "chong2006pneumoconiosis": {
+  "type": "journal",
+  "authors": [
+   "Chong S",
+   "Lee KS",
+   "Chung MJ",
+   "Han J",
+   "Kwon OJ",
+   "Kim TS"
+  ],
+  "title": "Pneumoconiosis: comparison of imaging and pathologic findings",
+  "journal": "Radiographics",
+  "year": 2006,
+  "vol": "26",
+  "issue": "1",
+  "pages": "59-77",
+  "doi": "10.1148/rg.261055070",
+  "pmid": "16418244",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "hwang2021variability": {
+  "type": "journal",
+  "authors": [
+   "Hwang EJ",
+   "Goo JM",
+   "Kim HY",
+   "Yoon SH",
+   "Jin GY",
+   "Yi J",
+   "Kim Y"
+  ],
+  "title": "Variability in interpretation of low-dose chest CT using computerized assessment in a nationwide lung cancer screening program: comparison of prospective reading at individual institutions and retrospective central reading",
+  "journal": "Eur Radiol",
+  "year": 2021,
+  "vol": "31",
+  "issue": "5",
+  "pages": "2845-2855",
+  "doi": "10.1007/s00330-020-07424-1",
+  "pmid": "33123794",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "lee2025tuberculosis": {
+  "type": "journal",
+  "authors": [
+   "Lee H",
+   "Kim J",
+   "Kim J",
+   "Park YJ",
+   "Jeong H",
+   "Kim H",
+   "Shin J",
+   "Ahn H",
+   "Lee E",
+   "Jang A",
+   "Park S",
+   "Park S",
+   "Lee J",
+   "Kim Y",
+   "Kim G",
+   "Park G",
+   "Choi B",
+   "Kim Y",
+   "You S",
+   "Kim J",
+   "Seo S",
+   "Song C",
+   "Han J",
+   "Park A",
+   "Kim J",
+   "Han H",
+   "Jang M",
+   "Shim J",
+   "Choi S",
+   "Han S",
+   "Park Y",
+   "Kim J",
+   "Yoo J",
+   "Kim J",
+   "Pyo S",
+   "Kim Y",
+   "Lee J",
+   "Lee M"
+  ],
+  "title": "Tuberculosis notification status in the Republic of Korea, 2024",
+  "journal": "Public Health Wkly Rep",
+  "year": 2025,
+  "vol": "18",
+  "issue": "11 Suppl",
+  "pages": "6-22",
+  "doi": "10.56786/PHWR.2025.18.11suppl.2",
+  "pmid": "41333079",
+  "verified": "PubMed esummary 2026-11-16",
+  "lang": "Korean"
+ },
+ "singh2012reader": {
+  "type": "journal",
+  "authors": [
+   "Singh SP",
+   "Gierada DS",
+   "Pinsky P",
+   "Sanders C",
+   "Fineberg N",
+   "Sun Y",
+   "Lynch D",
+   "Nath H"
+  ],
+  "title": "Reader variability in identifying pulmonary nodules on chest radiographs from the national lung screening trial",
+  "journal": "J Thorac Imaging",
+  "year": 2012,
+  "vol": "27",
+  "issue": "4",
+  "pages": "249-54",
+  "doi": "10.1097/RTI.0b013e318256951e",
+  "pmid": "22627615",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "yoo2022artificial": {
+  "type": "journal",
+  "authors": [
+   "Yoo H",
+   "Kim EY",
+   "Kim H",
+   "Choi YR",
+   "Kim MY",
+   "Hwang SH",
+   "Kim YJ",
+   "Cho YJ",
+   "Jin KN"
+  ],
+  "title": "Artificial Intelligence-Based Identification of Normal Chest Radiographs: A Simulation Study in a Multicenter Health Screening Cohort",
+  "journal": "Korean J Radiol",
+  "year": 2022,
+  "vol": "23",
+  "issue": "10",
+  "pages": "1009-1018",
+  "doi": "10.3348/kjr.2022.0189",
+  "pmid": "36175002",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "kim2023multicentre": {
+  "type": "journal",
+  "authors": [
+   "Kim C",
+   "Yang Z",
+   "Park SH",
+   "Hwang SH",
+   "Oh YW",
+   "Kang EY",
+   "Yong HS"
+  ],
+  "title": "Multicentre external validation of a commercial artificial intelligence software to analyse chest radiographs in health screening environments with low disease prevalence",
+  "journal": "Eur Radiol",
+  "year": 2023,
+  "vol": "33",
+  "issue": "5",
+  "pages": "3501-3509",
+  "doi": "10.1007/s00330-022-09315-z",
+  "pmid": "36624227",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "riebler2016intuitive": {
+  "type": "journal",
+  "authors": [
+   "Riebler A",
+   "Sørbye SH",
+   "Simpson D",
+   "Rue H"
+  ],
+  "title": "An intuitive Bayesian spatial model for disease mapping that accounts for scaling",
+  "journal": "Stat Methods Med Res",
+  "year": 2016,
+  "vol": "25",
+  "issue": "4",
+  "pages": "1145-65",
+  "doi": "10.1177/0962280216660421",
+  "pmid": "27566770",
+  "verified": "PubMed esummary 2026-11-16"
+ },
+ "shin2018association": {
+  "type": "journal",
+  "authors": [
+   "Shin HY",
+   "Kang HT",
+   "Lee JW",
+   "Lim HJ"
+  ],
+  "title": "The association between socioeconomic status and adherence to health check-up in Korean adults, based on the 2010-2012 Korean National Health and Nutrition Examination Survey",
+  "journal": "Korean J Fam Med",
+  "year": 2018,
+  "vol": "39",
+  "issue": "2",
+  "pages": "114-121",
+  "doi": "10.4082/kjfm.2018.39.2.114",
+  "pmid": "29629044",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "inskip1983methods": {
+  "type": "journal",
+  "authors": [
+   "Inskip H",
+   "Beral V",
+   "Fraser P",
+   "Haskey J"
+  ],
+  "title": "Methods for age-adjustment of rates",
+  "journal": "Stat Med",
+  "year": 1983,
+  "vol": "2",
+  "issue": "4",
+  "pages": "455-466",
+  "doi": "10.1002/sim.4780020404",
+  "pmid": "6672943",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "morgenstern1995ecologic": {
+  "type": "journal",
+  "authors": [
+   "Morgenstern H"
+  ],
+  "title": "Ecologic studies in epidemiology: concepts, principles, and methods",
+  "journal": "Annu Rev Public Health",
+  "year": 1995,
+  "vol": "16",
+  "issue": "",
+  "pages": "61-81",
+  "doi": "10.1146/annurev.pu.16.050195.000425",
+  "pmid": "7639884",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "lipsitch2010negative": {
+  "type": "journal",
+  "authors": [
+   "Lipsitch M",
+   "Tchetgen Tchetgen E",
+   "Cohen T"
+  ],
+  "title": "Negative controls: a tool for detecting confounding and bias in observational studies",
+  "journal": "Epidemiology",
+  "year": 2010,
+  "vol": "21",
+  "issue": "3",
+  "pages": "383-388",
+  "doi": "10.1097/EDE.0b013e3181d61eeb",
+  "pmid": "20335814",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "vanderweele2017sensitivity": {
+  "type": "journal",
+  "authors": [
+   "VanderWeele TJ",
+   "Ding P"
+  ],
+  "title": "Sensitivity analysis in observational research: introducing the E-value",
+  "journal": "Ann Intern Med",
+  "year": 2017,
+  "vol": "167",
+  "issue": "4",
+  "pages": "268-274",
+  "doi": "10.7326/M16-2607",
+  "pmid": "28693043",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "bell2015explaining": {
+  "type": "journal",
+  "authors": [
+   "Bell A",
+   "Jones K"
+  ],
+  "title": "Explaining fixed effects: random effects modeling of time-series cross-sectional and panel data",
+  "journal": "Polit Sci Res Methods",
+  "year": 2015,
+  "vol": "3",
+  "issue": "1",
+  "pages": "133-153",
+  "doi": "10.1017/psrm.2014.7",
+  "verified": "Crossref 2026-11-12"
+ },
+ "vonelm2007strengthening": {
+  "type": "journal",
+  "authors": [
+   "von Elm E",
+   "Altman DG",
+   "Egger M",
+   "Pocock SJ",
+   "Gøtzsche PC",
+   "Vandenbroucke JP"
+  ],
+  "title": "The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies",
+  "journal": "Lancet",
+  "year": 2007,
+  "vol": "370",
+  "issue": "9596",
+  "pages": "1453-1457",
+  "doi": "10.1016/S0140-6736(07)61602-X",
+  "pmid": "18064739",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "rue2009approximate": {
+  "type": "journal",
+  "authors": [
+   "Rue H",
+   "Martino S",
+   "Chopin N"
+  ],
+  "title": "Approximate Bayesian inference for latent Gaussian models by using integrated nested Laplace approximations",
+  "journal": "J R Stat Soc Series B Stat Methodol",
+  "year": 2009,
+  "vol": "71",
+  "issue": "2",
+  "pages": "319-392",
+  "doi": "10.1111/j.1467-9868.2008.00700.x",
+  "verified": "Crossref 2026-11-12"
+ },
+ "simpson2017penalising": {
+  "type": "journal",
+  "authors": [
+   "Simpson D",
+   "Rue H",
+   "Riebler A",
+   "Martins TG",
+   "Sørbye SH"
+  ],
+  "title": "Penalising model component complexity: a principled, practical approach to constructing priors",
+  "journal": "Stat Sci",
+  "year": 2017,
+  "vol": "32",
+  "issue": "1",
+  "pages": "1-28",
+  "doi": "10.1214/16-sts576",
+  "verified": "Crossref 2026-11-12"
+ },
+ "kang2015korea": {
+  "type": "journal",
+  "authors": [
+   "Kang YW",
+   "Ko YS",
+   "Kim YJ",
+   "Sung KM",
+   "Kim HJ",
+   "Choi HY",
+   "Sung C",
+   "Jeong E"
+  ],
+  "title": "Korea Community Health Survey data profiles",
+  "journal": "Osong Public Health Res Perspect",
+  "year": 2015,
+  "vol": "6",
+  "issue": "3",
+  "pages": "211-217",
+  "doi": "10.1016/j.phrp.2015.05.003",
+  "pmid": "26430619",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "web:mois2026population": {
+  "type": "web",
+  "authors": "Ministry of the Interior and Safety",
+  "title": "Resident registration population by district, sex and 5-year age group, 2011-2024",
+  "url": "https://jumin.mois.go.kr",
+  "year": 2026,
+  "accessed": "20 October 2026"
+ },
+ "web:rcore2026": {
+  "type": "web",
+  "authors": "R Core Team",
+  "title": "R: a language and environment for statistical computing. Version 4.6.0. Vienna: R Foundation for Statistical Computing",
+  "url": "https://www.R-project.org/",
+  "year": 2026,
+  "accessed": "20 October 2026"
+ },
+ "web:kosis2026screening": {
+  "type": "web",
+  "authors": "National Health Insurance Service",
+  "title": "National health screening statistics: general health screening judgement by district and sex (DT_35007_N098, DT_35007_N103, DT_35007_N105), by sex and age group (DT_35007_N099, DT_35007_N104) and screening uptake (DT_35007_N001)",
+  "url": "https://kosis.kr",
+  "year": 2026,
+  "accessed": "16 November 2026"
+ }
+}
