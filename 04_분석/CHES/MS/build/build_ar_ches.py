@@ -17,10 +17,16 @@ CREDIT = "Seongdae Kim: Conceptualization, Data curation, Formal analysis, Inves
 COI = "The author declares that there are no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper."
 AI_HEAD = "Declaration of generative AI and AI-assisted technologies in the manuscript preparation process"
 AI_STATEMENT = "During the preparation of this work the author used Claude (Anthropic) and ChatGPT (OpenAI) only for translation and English-language editing of the manuscript. After using these tools, the author reviewed and edited the content as needed and takes full responsibility for the content of the published article."
-DATA_ANON = "All source data are publicly available aggregate statistics cited in the Materials and Methods. The analysis code is openly available in a public repository under the MIT License (link on the title page, withheld for blinded review). The processed district-year data are available from the author on reasonable request."
+DATA_ANON = "All source data are publicly available aggregate statistics cited in the Materials and Methods. The analysis code is openly available in a public repository under the MIT License (link on the title page, withheld for blinded review). The processed district-year data are available on reasonable request."
+AI_ANON = "During the preparation of this work, Claude (Anthropic) and ChatGPT (OpenAI) were used only for translation and English-language editing of the manuscript. After using these tools, the content was reviewed and edited as needed, and full responsibility is taken for the content of the published article."
 def data_full(): return f"All source data are publicly available aggregate statistics cited in the Materials and Methods. The analysis code and the scripts that generate every number, table and figure are openly available on Zenodo (https://doi.org/{ZENODO}) and GitHub ({GITHUB}) under the MIT License; they contain code only. The processed district-year data are available from the author on reasonable request."
 ETHICS_FULL = "The Institutional Review Board of Hongik University approved the study on 4 November 2025 (7002340-202511-HR-012) and its continuing review on 3 November 2026 (7002340-202611-HR-040) and waived informed consent because only published aggregate statistics were used."
-ABBR = [("AI", "artificial intelligence"), ("BYM2", "Besag–York–Mollié 2"), ("CrI", "credible interval"), ("RR", "rate ratio"), ("SD", "standard deviation"), ("WAIC", "widely applicable information criterion")]
+ABBR_ALL = [("AI", "artificial intelligence"), ("BYM2", "Besag–York–Mollié 2"), ("CrI", "credible interval"), ("CT", "computed tomography"), ("RR", "rate ratio"), ("SD", "standard deviation"), ("STROBE", "Strengthening the Reporting of Observational Studies in Epidemiology"), ("WAIC", "widely applicable information criterion")]
+def _abbr():
+    import content_ches as _C
+    body = " ".join(_C.INTRO + [t for _, t in _C.METHODS] + [t for _, t in _C.RESULTS] + _C.DISCUSSION)
+    return [(a, b) for a, b in ABBR_ALL if len(re.findall(rf"(?<![A-Za-z]){re.escape(a)}(?![A-Za-z])", body)) >= 3]
+ABBR = _abbr()
 
 def cites(t): return re.sub(r"\s*\[(@[^\]]+)\]", lambda m: " {{" + ",".join(k.strip().lstrip("@") for k in m.group(1).split(";")) + "}}", t)
 def all_keys():
@@ -68,14 +74,14 @@ def table1():
     T = N["T1"]; cols = ["W1_2011-15", "W2_2016-19", "W3_2020-24", "2011-2024"]
     rows = [["__H__", "Screening"], ["  District-years, n"] + [f"{T[c]['n']:,}" for c in cols], ["  Examinations, million"] + [f"{T[c]['exam']/1e6:.1f}" for c in cols],
             ["  Flagged as other chest disease, n"] + [f"{T[c]['cases']:,}" for c in cols], ["  Crude positivity, %"] + [f"{T[c]['pos']:.2f}" for c in cols],
-            ["  Standardised ratio, median\u2020"] + [f"{T[c]['sir_med']:.2f}" for c in cols], ["  Standardised ratio, P10\u2013P90\u2020"] + [f"{T[c]['sir_p10']:.2f}\u2013{T[c]['sir_p90']:.2f}" for c in cols]]
+            ["  Standardised ratio, median*"] + [f"{T[c]['sir_med']:.2f}" for c in cols], ["  Standardised ratio, P10\u2013P90*"] + [f"{T[c]['sir_p10']:.2f}\u2013{T[c]['sir_p90']:.2f}" for c in cols]]
     for g, vs in GROUPS:
         rows.append(["__H__", f"{g}, mean (SD)"])
         for v in vs:
             lab, unit = LAB[v]; mx = max(abs(T[c]["cov"][v][0]) for c in cols); dp = 0 if mx >= 100 else (2 if mx < 3 else 1)
             f = (lambda m, s: f"{100*m:.1f}") if v == "coal_plant_host" else (lambda m, s: f"{m:,.{dp}f} ({s:,.{dp}f})")
             rows.append([f"  {lab}, {unit}"] + [f(*T[c]["cov"][v]) for c in cols])
-    foot = ("\u2020Observed over expected number flagged, summed over the period by district; expected numbers from national positivity by year, sex and age group applied to the estimated age structure of each district's examinees. "
+    foot = ("*Observed over expected number flagged, summed over the period by district; expected numbers from national positivity by year, sex and age group applied to the estimated age structure of each district's examinees. "
             "Covariates are shown before standardisation; coal-fired power plant is the percentage of districts hosting a plant. P10\u2013P90, 10th\u201390th percentile; SD, standard deviation.")
     return ("Table 1. Chest Radiographs Flagged as Other Chest Disease and District Characteristics by Period, Korea, 2011\u20132024", ["Characteristic", "2011\u20132015", "2016\u20132019", "2020\u20132024", "2011\u20132024"], rows, foot)
 def table2():
@@ -142,14 +148,14 @@ def build(bw=0, aw=0, deanon=False):
     for p in disc[ci_ + 1:]: J.para(cites(p), indent=True)
     J.counting = False
     if deanon: J.head("CRediT authorship contribution statement", 1); J.para(CREDIT)
-    for h, t in (("Data availability", data_full() if deanon else DATA_ANON), (AI_HEAD, AI_STATEMENT)):
+    for h, t in (("Data availability", data_full() if deanon else DATA_ANON), (AI_HEAD, AI_STATEMENT if deanon else AI_ANON)):
         J.head(h, 1); J.para(t)
     assert sorted(J.cites) == KEYS, (set(J.cites) ^ set(KEYS))
     J.page_break(); J.head("References", 1); J.raw = True; rl = []
     for n, k in enumerate(J.cites, 1): s = f"{n}. {ama(k)}"; rl.append(s); J.para(s)
     J.raw = False
-    J.page_break(); put_table(J, table1()); J.page_break(); put_table(J, table2())
-    J.page_break(); J.head("Figure Legends", 1)
+    J.page_break(); put_table(J, table1()); J.new_page("landscape"); put_table(J, table2(), fs=8)
+    J.new_page("portrait"); J.head("Figure Legends", 1)
     for k in sorted(FIGCAP): t, c = FIGCAP[k]; J.para(f"<b>Figure {k}.</b> {t}. {c}")
     return J, rl
 
@@ -166,7 +172,12 @@ if __name__ == "__main__":
     J, rl = build(bw, aw); J.save(p); assert docx_bw(p) == bw, bw; to_pdf(p)
     D, _ = build(bw, aw, deanon=True); dp = os.path.join(OUT, "Manuscript_Deanonymized.docx"); D.save(dp); to_pdf(dp)
     for i, t in ((1, table1()), (2, table2())):
-        T = TX(cite="bracket"); put_table(T, t); tp = os.path.join(OUT, f"Table_{i}.docx"); T.save(tp)
+        T = TX(cite="bracket")
+        if i == 2:
+            from docx.enum.section import WD_ORIENT
+            from docx.shared import Cm
+            s0 = T.doc.sections[0]; s0.orientation = WD_ORIENT.LANDSCAPE; s0.page_width, s0.page_height = Cm(29.7), Cm(21.0)
+        put_table(T, t, fs=8 if i == 2 else 9); tp = os.path.join(OUT, f"Table_{i}.docx"); T.save(tp)
     K = TX(cite="bracket"); K.para("<b>Declaration of interests</b>"); K.para(f"Manuscript: {TITLE}")
     K.para("\u2612 The author declares that there are no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.")
     K.save(os.path.join(OUT, "Declaration_of_Interests.docx"))

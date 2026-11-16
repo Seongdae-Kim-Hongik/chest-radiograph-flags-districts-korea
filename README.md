@@ -4,7 +4,7 @@ Analysis code for the manuscript
 
 > Kim S. *Where is a screening chest radiograph called abnormal? District variation in other chest disease flags over 14 years of Korean national health screening.*
 
-Archived version: Zenodo, https://doi.org/10.5281/zenodo.24294259 (v1.0.0).
+Archived version: Zenodo, https://doi.org/10.5281/zenodo.24294376 (v1.0.1).
 
 This code is released under the MIT licence.
 

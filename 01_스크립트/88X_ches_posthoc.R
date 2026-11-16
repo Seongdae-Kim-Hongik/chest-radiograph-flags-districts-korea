@@ -10,12 +10,13 @@ DD$time<-DD$year-min(DD$year)+1; DD$yiid<-DD$time
 M<-read.csv(file.path(B,"results_std3","S3_main_IRR.csv"))$cov
 pc<-list(prec=list(prior="pc.prec",param=c(0.5,0.01)),phi=list(prior="pc",param=c(0.5,2/3)));pcp<-list(prec=list(prior="pc.prec",param=c(0.5,0.01)))
 CF<-list(mean=0,prec=4,mean.intercept=0,prec.intercept=0.001)
-fit<-function(v){f<-as.formula(paste("cases ~ 1 +",paste(sprintf("`%s`",v),collapse="+"),"+ f(area,model='bym2',graph=g,scale.model=TRUE,constr=TRUE,hyper=pc) + f(time,model='rw1',scale.model=TRUE,hyper=pcp) + f(yiid,model='iid',hyper=pcp)"))
-  inla(f,family="nbinomial",data=DD,E=DD$E,control.fixed=CF,control.compute=list(waic=TRUE),control.inla=list(control.vb=list(emergency=50)))}
+fit<-function(v,dat=DD){f<-as.formula(paste("cases ~ 1 +",paste(sprintf("`%s`",v),collapse="+"),"+ f(area,model='bym2',graph=g,scale.model=TRUE,constr=TRUE,hyper=pc) + f(time,model='rw1',scale.model=TRUE,hyper=pcp) + f(yiid,model='iid',hyper=pcp)"))
+  inla(f,family="nbinomial",data=dat,E=dat$E,control.fixed=CF,control.compute=list(waic=TRUE),control.inla=list(control.vb=list(emergency=50)))}
 EX<-list(main=character(0),tb_suspect="ext__tb_suspect_share",detached="detached_house_households",im_spec="im_specialists_per_100k",
          all3=c("ext__tb_suspect_share","detached_house_households","im_specialists_per_100k"))
 R<-NULL
-for(nm in names(EX)){v<-c(M,EX[[nm]]);stopifnot(all(v%in%names(DD)));t0<-Sys.time();m<-fit(v);s<-m$summary.fixed[-1,]
+EX$drop2123<-character(0)
+for(nm in names(EX)){v<-c(M,EX[[nm]]);stopifnot(all(v%in%names(DD)));t0<-Sys.time();m<-if(nm=="drop2123"){d2<-DD[!DD$year%in%2021:2023,];d2$time<-match(d2$year,sort(unique(d2$year)));d2$yiid<-d2$time;fit(v,d2)} else fit(v);s<-m$summary.fixed[-1,]
   r<-data.frame(spec=nm,cov=rownames(s),IRR=round(exp(s$mean),3),lo=round(exp(s$`0.025quant`),3),hi=round(exp(s$`0.975quant`),3),WAIC=round(m$waic$waic,1),
                 phi=round(m$summary.hyperpar["Phi for area","mean"],3));r$cov<-gsub("`","",r$cov);r$cred<-r$lo>1|r$hi<1;R<-rbind(R,r)
   cat(sprintf("[88X %s] %-10s WAIC %.1f phi %.3f · %.1f min\n",format(Sys.time(),"%H:%M:%S"),nm,m$waic$waic,r$phi[1],as.numeric(difftime(Sys.time(),t0,units="mins"))))}

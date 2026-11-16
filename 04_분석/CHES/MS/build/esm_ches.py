@@ -67,13 +67,14 @@ def s5():
         for v in vs: rows.append([LAB[v][0]] + [row(W[W.window == w], v) for w in ("W1_2011-15", "W2_2016-19", "W3_2020-24")])
     return ("Supplementary Table S5. Principal Model by Calendar Period: Rate Ratios per 1 SD (95% CrI)", ["Characteristic", "2011–2015", "2016–2019", "2020–2024"], rows, "")
 def s6():
-    rows = []
+    rows = [["__H__", "Alternative specifications summarised in the text (45)"]]
     for f in sorted(glob.glob(os.path.join(RS, "S41_part_*.csv"))):
         a = os.path.basename(f)[9:-4]
         if a.startswith(("H1_nco", "bw_", "G2_noise")): continue
         d = pd.read_csv(f); note = str(d.note.iloc[0]) if "note" in d and pd.notna(d.note.iloc[0]) else a
         lab = a.replace("F1_drop_sido_", "Without province ").replace("F2_drop_year_", "Without year ") if a.startswith(("F1", "F2")) else note
         rows.append([lab] + [row(d, k) for k, _ in ROB])
+    rows.append(["__H__", "Space\u2013time interactions, district effects, other denominators and decomposition"])
     for lab, f in (("Knorr-Held type I", "S9_typeI_IRR.csv"), ("Knorr-Held type II", "S43_part_KH_typeII.csv"), ("Knorr-Held type III", "S43_part_KH_typeIII.csv"), ("Knorr-Held type IV", "S43_part_KH_typeIV.csv"),
                    ("ICAR district effect", "S43_part_icar_besag.csv"), ("Independent district effect only", "S43_part_iid_only.csv"), ("No district effect", "S43_part_no_spatial.csv"), ("k-nearest neighbours (k = 5)", "S43_part_knn5.csv")):
         d = pd.read_csv(os.path.join(RS, f)); rows.append([lab] + [row(d, k) for k, _ in ROB])
@@ -100,6 +101,11 @@ def s7():
     foot = (f"Upper rows: the principal model with characteristics fixed in advance for sensitivity analysis only; columns give the added characteristic(s), basic livelihood security receipt, moderate-or-vigorous physical activity and WAIC. "
             f"Lower rows: residual district rate ratio of seven districts with former major coal mines (median {N['coal_mines_med']:.2f}, other districts {N['coal_others_med']:.2f}). "
             f"Unadjusted Spearman's ρ of district standardised ratios: {D['rho_sir_tbsuspect']:.2f} with the suspected tuberculosis share and {D['rho_sir_tbhistory']:.2f} with tuberculosis history; median ρ between adjacent years {D['rho_year_adjacent_median']:.2f}; 2011 vs 2024 {D['rho_2011_2024']:.2f}. WAIC, widely applicable information criterion.")
+    rows += [["__H__", "Exposure markers by district-effect structure"]]
+    EXP = [("ext__tb_history_share", "TB history"), ("current_smoking_rate", "Smoking"), ("factory_land_share", "Industrial land"), ("coal_plant_host", "Coal plant")]
+    for lab, f in (("Principal model", "S3_main_IRR.csv"), ("Independent district effect only", "S43_part_iid_only.csv"), ("No district effect", "S43_part_no_spatial.csv"), ("Spatial+", "S41_part_D1_spatial_plus.csv")):
+        d = pd.read_csv(os.path.join(RS, f)); rows.append([lab] + ["; ".join(f"{n} {row(d, k)}" for k, n in EXP[:2]), "; ".join(f"{n} {row(d, k)}" for k, n in EXP[2:]), "", ""])
+    d = X[X.spec == "drop2123"]; rows += [["__H__", "Without 2021\u20132023"], ["Principal model without 2021\u20132023", "\u2013", row(d, "basic_livelihood_rate"), row(d, "moderate_pa_rate"), f"{d.WAIC.iloc[0]:,.1f}"]]
     return ("Supplementary Table S7. Post Hoc Analyses", ["Analysis or district", "Added characteristic(s)", "Basic livelihood", "Physical activity", "WAIC"], rows, foot)
 STROBE = [("Title and abstract", "Ecological panel design stated in the abstract", "Abstract"), ("Background/rationale", "Introduction", "Introduction"), ("Objectives", "Final paragraph of the Introduction", "Introduction"),
           ("Study design", "Ecological panel study", "Materials and Methods"), ("Setting", "Korea, 2011–2024, national general health examination", "Materials and Methods"), ("Participants", "All districts; examinees with a judgement", "Materials and Methods; Table S1"),
